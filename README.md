@@ -14,12 +14,12 @@ https://www.drdobbs.com/testing-random-number-generators/184403185?fbclid=IwAR3L
 I was curious what algorithm does `Math.random()` use.  
 Based on (ECMA262)[https://tc39.es/ecma262/#sec-math.random]
 and this (article)[https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131]:  
-none... It is puerly based on browser implementation.
+none... It is puerly based on current implementation.
 
 MDN in (article)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random] about
 Math.random says: "`Math.random()` does not provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the `window.crypto.getRandomValues()` method." (data from 08.05.2020)
 
-# Test results for 1,000,000 iterations, tested with: Ubuntu 18.04, FF v.75.0 (64-bit)
+# Test results for 1,000,000 iterations, tested with: Ubuntu v.18.04, nodejs v.13.3.0
 
 ## Frequency test
 
