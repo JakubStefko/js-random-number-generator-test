@@ -12,14 +12,17 @@ https://www.drdobbs.com/testing-random-number-generators/184403185?fbclid=IwAR3L
 # Math.random()
 
 I was curious what algorithm does `Math.random()` use.  
-Based on (ECMA262)[https://tc39.es/ecma262/#sec-math.random]
-and this (article)[https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131]:  
+Based on [ECMA262](https://tc39.es/ecma262/#sec-math.random)
+and this [article](https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131):  
 none... It is puerly based on current implementation.
 
-MDN in (article)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random] about
-Math.random says: "`Math.random()` does not provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the `window.crypto.getRandomValues()` method." (data from 08.05.2020)
+MDN in [article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) about
+Math.random says: "`Math.random()` does not provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the `window.crypto.getRandomValues()` method."  
+_data from 08.05.2020_
 
-# Test results for 1,000,000 iterations, tested with: Ubuntu v.18.04, nodejs v.13.3.0
+# Test results for 1,000,000 iterations
+
+_tested with: Ubuntu v.18.04, nodejs v.13.3.0_
 
 ## Frequency test
 
