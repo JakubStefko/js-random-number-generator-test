@@ -1,4 +1,4 @@
-function nearbyValues(numberOfIterations = 0, randFunction = Math.random) {
+function nearbyValuesTest(numberOfIterations = 0, randFunction = Math.random) {
   let i, lastRandom, currentRandom, min, max, average, difference
 
   min = Infinity
@@ -23,10 +23,9 @@ function nearbyValues(numberOfIterations = 0, randFunction = Math.random) {
     lastRandom = currentRandom
   }
 
-  console.log('Number of iterations: ', numberOfIterations)
   console.log('Minimum difference between 2 random numbers: ', min)
   console.log('Maximum difference between 2 random numberss: ', max)
   console.log('Average difference: ', average / numberOfIterations)
 }
 
-module.exports = nearbyValues
+module.exports = nearbyValuesTest
