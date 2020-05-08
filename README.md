@@ -31,12 +31,12 @@ Minimum number of same values: 1
 Maximum number of same values: 1  
 Average: 1
 
-`LCG`
+`LCG`  
 Minimum number of same values: 1  
 Maximum number of same values: 1  
 Average: 1
 
-`Math.random`
+`Math.random`  
 Minimum number of same values: 1  
 Maximum number of same values: 1  
 Average: 1
@@ -48,7 +48,7 @@ Minimum difference between 2 random numbers: 0.000002152438128399936
 Maximum difference between 2 random numberss: 0.999999871020429  
 Average difference: 0.5000301360231195
 
-`LCG`
+`LCG`  
 Minimum difference between 2 random numbers: 2.614319738469817e-8  
 Maximum difference between 2 random numberss: 0.999999681234079  
 Average difference: 0.49992437019891156
