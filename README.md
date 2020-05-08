@@ -26,16 +26,34 @@ _tested with: Ubuntu v.18.04, nodejs v.13.3.0_
 
 ## Frequency test
 
+`MersenneTwister`  
+Minimum number of same values: 1  
+Maximum number of same values: 1  
+Average: 1
+
+`LCG`
+Minimum number of same values: 1  
+Maximum number of same values: 1  
+Average: 1
+
+`Math.random`
 Minimum number of same values: 1  
 Maximum number of same values: 1  
 Average: 1
 
 ## Nearby values test
 
+`MersenneTwister`  
+Minimum difference between 2 random numbers: 0.000002152438128399936  
+Maximum difference between 2 random numberss: 0.999999871020429  
+Average difference: 0.5000301360231195
+
+`LCG`
+Minimum difference between 2 random numbers: 2.614319738469817e-8  
+Maximum difference between 2 random numberss: 0.999999681234079  
+Average difference: 0.49992437019891156
+
+`Math.random`  
 Minimum difference between 2 random numbers: 0.000001586145575105391  
 Maximum difference between 2 random numberss: 0.9999986307737156  
 Average difference: 0.5003100863713612
-
-## Mersenne Twister test
-
-## LCG test

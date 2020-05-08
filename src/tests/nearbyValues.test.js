@@ -1,13 +1,13 @@
-function nearbyValues(numberOfIterations = 0) {
+function nearbyValues(numberOfIterations = 0, randFunction = Math.random) {
   let i, lastRandom, currentRandom, min, max, average, difference
 
   min = Infinity
   max = -Infinity
   average = 0
-  lastRandom = Math.random()
+  lastRandom = randFunction()
 
   for (i = 0; i < numberOfIterations; i++) {
-    currentRandom = Math.random()
+    currentRandom = randFunction()
     difference = Math.abs((lastRandom = currentRandom))
 
     average += difference

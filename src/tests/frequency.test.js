@@ -1,9 +1,9 @@
-function frequencyTest(numberOfIterations = 0) {
+function frequencyTest(numberOfIterations = 0, randFunction = Math.random) {
   let i, currentRand, min, max, average
   let model = {}
 
   for (i = 0; i < numberOfIterations; i++) {
-    currentRand = Math.random()
+    currentRand = randFunction()
     if (currentRand in model) {
       model[currentRand] += 1
     } else {
