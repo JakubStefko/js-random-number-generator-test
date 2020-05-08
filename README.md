@@ -1,8 +1,8 @@
 # Welcome
 
-Hello!  
 If you are looking for random number generator tests in JS i encourage you to look in this repository.  
-TBH i was almost sure, that most of the tests will fail, but i was pleasantly surprised.
+TBH i was almost sure, that most of the tests will fail, but i was pleasantly surprised.  
+All algorithms are randing value feom 0 to 1.
 
 If you want to run theese tests you have to install node first :)  
 Then just open console, clone this repo, navigate to src folder and type `node main.js`
@@ -64,3 +64,37 @@ Average difference: 0.49992437019891156
 Minimum difference between 2 random numbers: 0.000001586145575105391  
 Maximum difference between 2 random numberss: 0.9999986307737156  
 Average difference: 0.5003100863713612
+
+## Length test
+
+`MersenneTwister`  
+Minimum length of rand value: 13  
+Maximum length of rand value: 24  
+Average: 18.269839
+
+`LCG`  
+Minimum length of rand value: 13  
+Maximum length of rand value: 24  
+Average: 18.269365
+
+`Math.random`  
+Minimum length of rand value: 13  
+Maximum length of rand value: 24  
+Average: 18.270861
+
+## Tendency test
+
+`MersenneTwister`  
+Increase: 500022  
+Decrease: 499978  
+Still: 0
+
+`LCG`  
+Increase: 500437  
+Decrease: 499563  
+Still: 0
+
+`Math.random`  
+Increase: 499699  
+Decrease: 500301  
+Still: 0
