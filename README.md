@@ -2,7 +2,12 @@
 
 Hello!  
 If you are looking for random number generator tests in JS i encourage you to look in this repository.  
-TBH i was almost sure, that most of the tests will fail, but i was pleasantly surprised
+TBH i was almost sure, that most of the tests will fail, but i was pleasantly surprised.
+
+If you want to run theese tests you have to install node first :)  
+Then just open console, clone this repo, navigate to src folder and type `node main.js`
+
+Enjoy!
 
 # Source of knowledge
 
@@ -13,12 +18,14 @@ https://www.drdobbs.com/testing-random-number-generators/184403185?fbclid=IwAR3L
 
 I was curious what algorithm does `Math.random()` use.  
 Based on [ECMA262](https://tc39.es/ecma262/#sec-math.random)
-and this [article](https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131):  
-none... It is puerly based on current implementation.
+and this [article](https://hackernoon.com/how-does-javascripts-math-random-generate-random-numbers-ef0de6a20131)... none!  
+It's puerly based on current implementation.
 
 MDN in [article](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) about
 Math.random says: "`Math.random()` does not provide cryptographically secure random numbers. Do not use them for anything related to security. Use the Web Crypto API instead, and more precisely the `window.crypto.getRandomValues()` method."  
 _data from 08.05.2020_
+
+Anyway I am gonna look at this 3 random number generators just for curiosity.
 
 # Test results for 1,000,000 iterations
 
